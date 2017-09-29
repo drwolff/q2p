@@ -4,7 +4,7 @@ from wand.image import Image
 from wand.font import Font
 
 n = 2
-i = open('tesla.txt').read()
+i = open('file.txt').read()
 sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
 for x in sent_detector.tokenize(i.strip()):
     with Image(filename='1.jpg') as img:
